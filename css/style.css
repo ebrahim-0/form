@@ -1,0 +1,130 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #243b55;
+  color: white;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container form {
+  display: flex;
+  gap: 4%;
+  max-width: 800px;
+  margin: 100px auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
+  padding: 40px 20px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.container .right {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.container .left {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+form input:not([type="submit"]) {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid white;
+  outline: 0;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+form input:not([type="submit"]):not(:last-child) {
+  margin-bottom: 30px;
+}
+
+form input:not([type="submit"]):focus::placeholder,
+.right textarea:focus::placeholder {
+  transition: 0.3s;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.right textarea {
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid rgb(255 255 255 / 30%);
+  outline: 0;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form input[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  background-color: #243b55;
+  border: 0;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .container form {
+    flex-direction: column;
+  }
+  .container .left {
+    width: 100%;
+  }
+  .container .right {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
