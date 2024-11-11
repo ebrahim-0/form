@@ -2,50 +2,79 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f4f4f9;
+  color: #333;
 }
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-section {
-  padding: 20px;
-  margin: 20px;
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
   background-color: #fff;
-  border-radius: 8px;
+  padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
-
-h1,
-h2,
-h3 {
-  margin: 0 0 10px;
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 5px;
 }
-
-footer {
-  background-color: #333;
-  color: #fff;
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header {
   text-align: center;
-  padding: 10px;
+  margin-bottom: 20px;
 }
-
-a {
-  color: #1e90ff;
+h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+h3 {
+  margin: 5px 0;
+  color: #666;
+  font-size: 18px;
+}
+.content-section {
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  color: #333;
+}
+.links a {
+  color: #0073b1;
   text-decoration: none;
+  margin-right: 10px;
+  font-weight: bold;
 }
-
-a:hover {
+.links a:hover {
   text-decoration: underline;
 }
-
-img,
-video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 10px 0;
+.courses,
+.interests {
+  list-style: none;
+  padding: 0;
+}
+.courses li,
+.interests li {
+  margin: 5px 0;
+  padding-left: 10px;
+  position: relative;
+}
+.courses li:before,
+.interests li:before {
+  content: "•";
+  color: #0073b1;
+  position: absolute;
+  left: 0;
 }
